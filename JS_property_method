@@ -1,0 +1,40 @@
+Object.property//对象属性
+Object.method()//对象方法
+document对象：
+ document.getElementById("myId");//返回id为myId的对象  
+ document.getElementsByTagName("myTagName");//返回标签为myTagName的对象数组
+ document.getElementsByClassName("myClassName");//返回class为myClassName的对象数组
+ document.getAttribute("myAttribute");//返回属性为myAttribute的属性值
+ document.setAttribute("myAttribute","myValue");//设置myAttribute值为myValue
+ document.createElement(nodeName)//创建一个名字为nodeName的元素节点
+ parent.appendChild(child)//为parent增加一个子节点child
+ document.createTextNode(text)//创建一个内容为text的文本节点
+ 
+ 
+ 
+ typeof document.getElementById("myId")//typeof操作符返回操作数是字符串，数值，函数，布尔值还是对象。本例返回object。
+ 
+ 
+
+element（元素）：
+ element.childNodes//获取任意元素的所有子元素
+ element.nodeType//（元素节点是1，属性节点是2，文本节点是3）
+ element.style.property//查询element元素的style属性里面的property属性//style为内嵌样式表
+ element.style.property="a"or'a'//设置style属性里面的property属性为a，加引号！
+ element.className//得到元素element的class属性
+ element.className=value//设置元素element的class属性为value
+ 
+ 
+node:
+ node.nodeValue//得到节点的值
+ node.nodeValue=x//设置节点值为x
+ node.firstChild//访问childNodes数组的第一个元素
+ node.lastChild//访问childNodes数组的最后一个元素
+ gallery.parentNode.insertBefore(description,gallery)//爸description元素插入到gallery元素之前
+
+
+其他：
+ variable=setTimeout("function",interval)//设置子在interval毫秒后执行function函数
+ clearTimeout(variable)//取消该variable的行为
+ parseInt（string）//提取字符串的数值信息为整数
+ parseFloat(string)//提取字符串的数值信息为浮点数
